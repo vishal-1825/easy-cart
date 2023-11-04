@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  
+  <body>
+
+    <!-- Navbar for Shopping page -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Easy Cart</a>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li>
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Category
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">All Prodcuts</a></li>
+                    <li><a class="dropdown-item" href="#">Shoes</a></li>
+                    <li><a class="dropdown-item" href="#">Clothes</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <button class="btn btn-outline-success" type="submit">Cart (<span id="cart-count">0</span>)</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel"> 
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="1.gif" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="2.avif" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="3.avif" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="4.avif" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="5.avif" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="6.avif" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    
+    <!-- Cards -->
+    <div class="custom-divider"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card product-card">
+            <div class="product-image-container">
+              <img src="11.webp" class="card-img-top product-image" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Puma Backpack</h5>
+              <p class="card-text">₹3,499</p>
+              <a href="#" class="btn btn-primary">View Options</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card product-card">
+            <div class="product-image-container">
+              <img src="12.webp" class="card-img-top product-image" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Dell XPS</h5>
+              <p class="card-text">₹1,12,999</p>
+              <a href="#" class="btn btn-primary">View Options</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card product-card">
+            <div class="product-image-container">
+              <img src="13.webp" class="card-img-top product-image" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ferrari Perfume</h5>
+              <p class="card-text">₹3,199</p>
+              <a href="#" class="btn btn-primary">View Options</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card product-card">
+            <div class="product-image-container">
+              <img src="14.webp" class="card-img-top product-image" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Hilfiger Wallet</h5>
+              <p class="card-text">₹1,679</p>
+              <a href="#" class="btn btn-primary">View Options</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="custom-divider"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card product-card">
+            <div class="product-image-container">
+              <img src="15.webp" class="card-img-top product-image" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Ray Ban Sunglasses</h5>
+              <p class="card-text">₹9,892</p>
+              <a href="#" class="btn btn-primary">View Options</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card product-card">
+            <div class="product-image-container">
+              <img src="16.webp" class="card-img-top product-image" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Boat Headphones</h5>
+              <p class="card-text">₹3,499</p>
+              <a href="#" class="btn btn-primary">View Options</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card product-card">
+            <div class="product-image-container">
+              <img src="17.webp" class="card-img-top product-image" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">JBL Speaker</h5>
+              <p class="card-text">₹12,249</p>
+              <a href="#" class="btn btn-primary">View Options</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card product-card">
+            <div class="product-image-container">
+              <img src="18.webp" class="card-img-top product-image" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">MRF Bat</h5>
+              <p class="card-text">₹1,499</p>
+              <a href="#" class="btn btn-primary">View Options</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="custom-divider"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card product-card">
+            <div class="product-image-container">
+              <img src="7.webp" class="card-img-top product-image" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">OnePlus Earbuds</h5>
+              <p class="card-text">₹3,492</p>
+              <a href="#" class="btn btn-primary">View Options</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card product-card">
+            <div class="product-image-container">
+              <img src="8.webp" class="card-img-top product-image" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Iphone 13 Pro</h5>
+              <p class="card-text">₹1,29,999</p>
+              <a href="#" class="btn btn-primary">View Options</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card product-card">
+            <div class="product-image-container">
+              <img src="9.webp" class="card-img-top product-image" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">FOSSIL Watch</h5>
+              <p class="card-text">₹9,579</p>
+              <a href="#" class="btn btn-primary">View Options</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card product-card">
+            <div class="product-image-container">
+              <img src="10.webp" class="card-img-top product-image" alt="...">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">LG Monitor</h5>
+              <p class="card-text">₹10,799</p>
+              <a href="#" class="btn btn-primary">View Options</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="custom-divider"></div>
+
+    <div class="b-example-divider"></div>
+
+    <!-- Footer -->
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
+      </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  </body>
+</html>
